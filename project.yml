@@ -1,0 +1,26 @@
+
+name: CarBrowser
+
+options:
+  deploymentTarget:
+    iOS: "16.0"
+
+targets:
+  CarBrowser:
+    type: application
+    platform: iOS
+
+    sources:
+      - CarBrowserApp.swift
+      - BrowserView.swift
+
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.osmanek93.CarBrowser
+        PRODUCT_NAME: CarBrowser
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: CarBrowser
+        INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads: NO
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
